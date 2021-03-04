@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutsp1.Delete_nutController">
+   <children>
+      <Button id="AjouterNut" fx:id="btnUpdate" layoutX="326.0" layoutY="351.0" onAction="#Supprimer" text="Supprimer" />
+      <Label fx:id="label" layoutX="146.0" layoutY="140.0" minHeight="16" minWidth="69" />
+      <Label layoutX="102.0" layoutY="102.0" prefHeight="47.0" prefWidth="69.0" text="Prenom" />
+      <Label layoutX="102.0" layoutY="217.0" prefHeight="17.0" prefWidth="42.0" text="Email" />
+      <Label layoutX="102.0" layoutY="65.0" prefHeight="17.0" prefWidth="52.0" text="Nom" />
+      <Label layoutX="102.0" layoutY="160.0" text="Adresse" />
+      <Label layoutX="64.0" layoutY="383.0" />
+      <Label layoutX="100.0" layoutY="279.0" text="Telephone" />
+      <TextField fx:id="nom" layoutX="209.0" layoutY="61.0" />
+      <TextField fx:id="prenom" layoutX="209.0" layoutY="113.0" />
+      <TextField fx:id="add" layoutX="209.0" layoutY="168.0" />
+      <TextField fx:id="email" layoutX="209.0" layoutY="225.0" />
+      <TextField fx:id="tel" layoutX="209.0" layoutY="275.0" />
+      <Button fx:id="btnAnnul" layoutX="246.0" layoutY="351.0" onAction="#btnAnnul" text="Annuler" />
+      <Text layoutX="410.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <TextField fx:id="ID_nut" layoutX="447.0" layoutY="28.0" />
+      <Button fx:id="Rechercher" layoutX="470.0" layoutY="101.0" mnemonicParsing="false" onAction="#Rechercher" text="Rechercher" />
+   </children>
+</AnchorPane>

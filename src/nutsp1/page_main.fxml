@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="nutsp1.Page_mainController">
+   <children>
+      <Button fx:id="afficher" layoutX="42.0" layoutY="41.0" mnemonicParsing="false" onAction="#afficher" prefHeight="45.0" prefWidth="174.0" text="Afficher Nutritionnistes" />
+   </children>
+</AnchorPane>
