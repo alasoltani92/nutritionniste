@@ -11,6 +11,6 @@
       <Button fx:id="affiche_supprimer" layoutX="325.0" layoutY="206.0" mnemonicParsing="false" onAction="#affiche_supprimer" prefHeight="25.0" prefWidth="165.0" text="Supprimer Nutritionnistes" textFill="#045120" />
       <Button fx:id="affiche_affiche" layoutX="324.0" layoutY="168.0" mnemonicParsing="false" onAction="#affiche_affiche" prefHeight="25.0" prefWidth="165.0" text="Afficher Nutritionnistes" textFill="#045120" />
       <Label layoutX="236.0" layoutY="25.0" />
-      <Button layoutX="356.0" layoutY="30.0" mnemonicParsing="false" onAction="#mail_act" text="Button" />
+      <Button layoutX="324.0" layoutY="251.0" mnemonicParsing="false" onAction="#mail_act" prefHeight="25.0" prefWidth="165.0" text="send mail" />
    </children>
 </AnchorPane>
