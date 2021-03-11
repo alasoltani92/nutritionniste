@@ -41,7 +41,7 @@ public class Page_mainController implements Initializable {
     }    
 
     @FXML
-    private void afficher(ActionEvent event) {
+     private void afficher(ActionEvent event) {
         
                  Statement stmt = null;
 Connection conn=null;
@@ -105,3 +105,5 @@ stmt.close();
     
 }
 }
+    
+

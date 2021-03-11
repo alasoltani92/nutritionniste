@@ -5,6 +5,7 @@
  */
 package nutsp1;
 
+import java.awt.event.KeyEvent;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,6 +16,8 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Point2D;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -53,8 +56,17 @@ public class Delete_nutController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+          
+        
+        
         // TODO
-    }    
+    }  
+    
+    
+   
+        
+  
+    
 
     @FXML
     private void Supprimer(ActionEvent event) {
@@ -91,6 +103,7 @@ public class Delete_nutController implements Initializable {
     }
       
       private void recher(){
+          validateID_nut();
         String requete_sql;
         Statement stmt = null;
         Connection conn= connect_to_data();
@@ -155,6 +168,19 @@ stmt.close();
            
            
            }
+
+    @FXML
+    private void validateID_nut() {
+        
+           if(!ID_nut.getText().matches("[0-9]*")){
+            ID_nut.clear();
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText("Attention");
+                    alert.setContentText("veuillez saisir un ID Valide");
+                    alert.showAndWait();
+    }
     
+    }
     
+   
 }

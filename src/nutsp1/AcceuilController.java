@@ -5,8 +5,11 @@
  */
 package nutsp1;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -39,26 +43,79 @@ public class AcceuilController implements Initializable {
         // TODO
     }    
 
+   
+    
     @FXML
     private void affiche_ajout(ActionEvent event) {
-      /* Parent root = FXMLLoader.load(getClass().getResource("acceuil.fxml"));
-        Scene scene = new Scene(root);
         
-        stage.setScene(scene);
-        stage.show();
-        */
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("AjoutNut.fxml"));
+               Stage mainStage = new Stage();
+                Scene scene = new Scene(root);
+                mainStage.setScene(scene);
+                mainStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(AcceuilController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @FXML
     private void affiche_modifier(ActionEvent event) {
+        
+          try {
+            Parent root = FXMLLoader.load(getClass().getResource("update_nut.fxml"));
+               Stage mainStage = new Stage();
+                Scene scene = new Scene(root);
+                mainStage.setScene(scene);
+                mainStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(AcceuilController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @FXML
     private void affiche_supprimer(ActionEvent event) {
+        
+              try {
+            Parent root = FXMLLoader.load(getClass().getResource("delete_nut.fxml"));
+               Stage mainStage = new Stage();
+                Scene scene = new Scene(root);
+                mainStage.setScene(scene);
+                mainStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(AcceuilController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @FXML
     private void affiche_affiche(ActionEvent event) {
+             try {
+            Parent root = FXMLLoader.load(getClass().getResource("page_main.fxml"));
+               Stage mainStage = new Stage();
+                Scene scene = new Scene(root);
+                mainStage.setScene(scene);
+                mainStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(AcceuilController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
+
+    @FXML
+    private void mail_act(ActionEvent event) {
+                try {
+            Parent root = FXMLLoader.load(getClass().getResource("send_email.fxml"));
+               Stage mainStage = new Stage();
+                Scene scene = new Scene(root);
+                mainStage.setScene(scene);
+                mainStage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(AcceuilController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+    }
+    
+    
     
 }

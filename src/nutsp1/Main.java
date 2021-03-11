@@ -19,11 +19,12 @@ public class Main extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("AjoutNut.fxml"));
-       // Parent root = FXMLLoader.load(getClass().getResource("update_nut.fxml"));
-      // Parent root = FXMLLoader.load(getClass().getResource("delete_nut.fxml"));
+       // Parent root = FXMLLoader.load(getClass().getResource("AjoutNut.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("update_nut.fxml"));
+    //  Parent root = FXMLLoader.load(getClass().getResource("delete_nut.fxml"));
     //Parent root = FXMLLoader.load(getClass().getResource("page_main.fxml"));
-    //Parent root = FXMLLoader.load(getClass().getResource("acceuil.fxml"));
+   Parent root = FXMLLoader.load(getClass().getResource("acceuil.fxml"));
+   //Parent root = FXMLLoader.load(getClass().getResource("send_email.fxml"));
         Scene scene = new Scene(root);
         
         stage.setScene(scene);

@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="527.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="nutsp1.AjoutNutController">
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutsp1.AjoutNutController">
     <children>
         <Button id="AjouterNut" fx:id="btnAjout" layoutX="306.0" layoutY="331.0" onAction="#AjoutNut" text="Ajouter" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
@@ -15,7 +15,7 @@
       <Label layoutX="82.0" layoutY="140.0" text="Adresse" />
       <Label layoutX="44.0" layoutY="363.0" />
       <Label layoutX="80.0" layoutY="259.0" text="Telephone" />
-      <TextField fx:id="nom" layoutX="189.0" layoutY="41.0" />
+      <TextField fx:id="nom" layoutX="189.0" layoutY="41.0" onAction="#validation_ajout" />
       <TextField fx:id="prenom" layoutX="189.0" layoutY="93.0" />
       <TextField fx:id="add" layoutX="189.0" layoutY="148.0" />
       <TextField fx:id="email" layoutX="189.0" layoutY="205.0" />

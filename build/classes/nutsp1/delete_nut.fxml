@@ -23,7 +23,7 @@
       <TextField fx:id="tel" layoutX="209.0" layoutY="275.0" />
       <Button fx:id="btnAnnul" layoutX="246.0" layoutY="351.0" onAction="#btnAnnul" text="Annuler" />
       <Text layoutX="410.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
-      <TextField fx:id="ID_nut" layoutX="447.0" layoutY="28.0" />
+      <TextField fx:id="ID_nut" layoutX="447.0" layoutY="28.0" onAction="#validateID_nut" />
       <Button fx:id="Rechercher" layoutX="470.0" layoutY="101.0" mnemonicParsing="false" onAction="#Rechercher" text="Rechercher" />
    </children>
 </AnchorPane>

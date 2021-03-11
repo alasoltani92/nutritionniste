@@ -16,14 +16,14 @@
       <Label layoutX="92.0" layoutY="150.0" text="Adresse" />
       <Label layoutX="54.0" layoutY="373.0" />
       <Label layoutX="90.0" layoutY="269.0" text="Telephone" />
-      <TextField fx:id="nom" layoutX="199.0" layoutY="51.0" />
+      <TextField fx:id="nom" layoutX="199.0" layoutY="51.0" onAction="#valid_champs_update" />
       <TextField fx:id="prenom" layoutX="199.0" layoutY="103.0" />
       <TextField fx:id="add" layoutX="199.0" layoutY="158.0" />
       <TextField fx:id="email" layoutX="199.0" layoutY="215.0" />
       <TextField fx:id="tel" layoutX="199.0" layoutY="265.0" />
       <Button fx:id="btnAnnul" layoutX="236.0" layoutY="341.0" onAction="#btnAnnul" text="Annuler" />
       <Text layoutX="400.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
-      <TextField fx:id="ID_nut" layoutX="437.0" layoutY="18.0" />
+      <TextField fx:id="ID_nut" layoutX="437.0" layoutY="18.0" onAction="#valid_id_recherche" />
       <Button fx:id="Rechercher" layoutX="460.0" layoutY="91.0" mnemonicParsing="false" onAction="#Rechercher" text="Rechercher" />
    </children>
 </AnchorPane>
