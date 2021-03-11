@@ -63,7 +63,7 @@ public class Send_emailController implements Initializable {
                return new PasswordAuthentication(myAccount, password);
             }      
         });
-
+      System.out.println("salut");
        Message message=prepareMessage(session,myAccount,recepient,objet,texte);
             Transport.send(message);
             System.out.println("sent successfully");   
